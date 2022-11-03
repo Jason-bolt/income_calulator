@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    
+    @livewire('calculator')
 
     @livewireScripts
 
