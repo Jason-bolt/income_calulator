@@ -44,7 +44,7 @@
                     <p class="text-center my-2 md:text-left">
                         Amount
                     </p>
-                    <input wire:model="amount" wire:change="calculate()" class="form-input rounded" type="number" min="0">
+                    <input wire:model="amount" wire:change="calculate()" wire:keydown="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
 
                 {{-- Number of hours a day --}}
