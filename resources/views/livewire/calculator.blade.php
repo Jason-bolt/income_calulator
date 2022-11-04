@@ -17,7 +17,7 @@
                     <p class="text-center my-2 md:text-left">
                         Rate of pay
                     </p>
-                    <select class="form-select rounded" name="rate" id="rate">
+                    <select class="form-select rounded">
                         <option wire:click="getRate('Hourly')" value="">Hourly</option>
                         <option wire:click="getRate('Daily')" value="">Daily</option>
                         <option wire:click="getRate('Monthly')" value="">Monthly</option>
@@ -30,7 +30,7 @@
                     <p class="text-center my-2 md:text-left">
                         Currency
                     </p>
-                    <select class="form-select rounded" name="" id="">
+                    <select class="form-select rounded">
                         <option wire:click="getCurrency('&dollar;'')" value="">&dollar;</option>
                         <option wire:click="getCurrency('&#8373;')" value="">&#8373;</option>
                         <option wire:click="getCurrency('&euro;')" value="">&euro;</option>
@@ -44,7 +44,7 @@
                     <p class="text-center my-2 md:text-left">
                         Amount
                     </p>
-                    <input wire:model="amount" class="form-input rounded" type="number" min="0">
+                    <input wire:model="amount" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
 
                 {{-- Number of hours a day --}}
@@ -52,7 +52,7 @@
                     <p class="text-center my-2 md:text-left">
                         Number of hours a day
                     </p>
-                    <input wire:model="daily_hours" class="form-input rounded" type="number" min="0">
+                    <input wire:model="daily_hours" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
 
                 {{-- Work days in the week --}}
@@ -60,7 +60,7 @@
                     <p class="text-center my-2 md:text-left">
                         Work days in the week
                     </p>
-                    <input wire:model="work_days" class="form-input rounded" type="number" min="0">
+                    <input wire:model="work_days" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
 
                 {{-- Off days --}}
@@ -68,7 +68,7 @@
                     <p class="text-center my-2 md:text-left">
                         Number of Off days (If applicable)
                     </p>
-                    <input wire:model="off_days" class="form-input rounded" type="number" min="0">
+                    <input wire:model="off_days" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
             </form>
 

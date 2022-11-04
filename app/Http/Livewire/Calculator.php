@@ -36,4 +36,9 @@ class Calculator extends Component
     {
         $this->currency = $currency;
     }
+
+    public function calculate()
+    {
+        $this->hourly_pay = $this->amount;
+    }
 }
