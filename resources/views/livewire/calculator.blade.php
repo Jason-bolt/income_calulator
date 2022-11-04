@@ -86,7 +86,7 @@
                         Hourly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        0.00
+                        {{ $hourly_pay }}
                     </p>
                 </div>
 
@@ -96,7 +96,7 @@
                         Daily pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        0.00
+                        {{ $daily_pay }}
                     </p>
                 </div>
 
@@ -106,7 +106,7 @@
                         Weekly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        0.00
+                        {{ $weekly_pay }}
                     </p>
                 </div>
 
@@ -116,7 +116,7 @@
                         Monthly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        0.00
+                        {{ $monthly_pay }}
                     </p>
                 </div>
 
@@ -126,7 +126,7 @@
                         Annual pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        45000.00
+                        {{ $annual_pay }}
                     </p>
                 </div>
             </div>

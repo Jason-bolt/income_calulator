@@ -19,6 +19,7 @@ class Calculator extends Component
     public $daily_pay = 0.00;
     public $weekly_pay = 0.00;
     public $monthly_pay = 0.00;
+    public $annual_pay = 0.00;
 
 
     public function render()
