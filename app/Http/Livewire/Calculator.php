@@ -14,6 +14,13 @@ class Calculator extends Component
     public $off_days = 0;
     public $daily_hours = 0;
 
+//    Results
+    public $hourly_pay = 0.00;
+    public $daily_pay = 0.00;
+    public $weekly_pay = 0.00;
+    public $monthly_pay = 0.00;
+
+
     public function render()
     {
         return view('livewire.calculator');

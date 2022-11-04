@@ -9,11 +9,16 @@
     @vite('resources/css/app.css')
     @livewireStyles
 </head>
-<body class="bg-gray-200">
+<body class="bg-blue-900">
 
     @livewire('calculator')
 
     @livewireScripts
 
+    <footer class="container mx-auto text-white font-serif pb-5">
+        <p class="text-center">
+            Send your comments through email at appiatujason@gmail.com
+        </p>
+    </footer>
 </body>
 </html>
