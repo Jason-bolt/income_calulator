@@ -12,6 +12,7 @@ class Calculator extends Component
     public $amount = 0;
     public $work_days = 0;
     public $off_days = 0;
+    public $daily_hours = 0;
 
     public function render()
     {

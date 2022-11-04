@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
     @livewireStyles
 </head>
-<body>
+<body class="bg-gray-200">
 
     @livewire('calculator')
 
