@@ -48,7 +48,7 @@
                 <p class="text-center my-2">
                     Work days in the week
                 </p>
-                <input class="form-input rounded-full" type="number" min="0">
+                <input wire:model="work_days" class="form-input rounded-full" type="number" min="0">
             </div>
 
             {{-- Off days --}}
@@ -56,7 +56,7 @@
                 <p class="text-center my-2">
                     Number of Off days (If applicable)
                 </p>
-                <input class="form-input rounded-full" type="number" min="0">
+                <input wire:model="off_days" class="form-input rounded-full" type="number" min="0">
             </div>
         </form>
     </div>
