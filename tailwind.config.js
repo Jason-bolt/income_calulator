@@ -6,7 +6,15 @@ module.exports = {
       "./resources/**/*.vue",
   ],
   theme: {
+      screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1449px'
+      },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/forms'),
+  ],
 }
