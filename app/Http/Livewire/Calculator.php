@@ -42,7 +42,7 @@ class Calculator extends Component
         if ($this->rate == 'Hourly')
         {
             $this->hourly_pay = $this->amount;
-            $this->daily_pay = $this->amount * $this->daily_hours;
+            $this->daily_pay = (int)$this->amount * (int)$this->daily_hours;
     }
         }
 
