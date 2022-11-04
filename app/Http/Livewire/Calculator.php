@@ -43,7 +43,8 @@ class Calculator extends Component
         {
             $this->hourly_pay = $this->amount;
             $this->daily_pay = (int)$this->amount * (int)$this->daily_hours;
-    }
+            $this->weekly_pay = $this->daily_pay * $this->work_days;
         }
+    }
 
 }
