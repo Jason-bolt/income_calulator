@@ -8,7 +8,7 @@ class Calculator extends Component
 {
 
     public $rate;
-    public $currency;
+    public $currency = '&dollar;';
     public $amount = 0;
     public $work_days = 0;
     public $off_days = 0;

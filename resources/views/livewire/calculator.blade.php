@@ -31,11 +31,11 @@
                         Currency
                     </p>
                     <select class="form-select rounded" name="" id="">
-                        <option wire:click="getCurrency(1)" value="">GH&#8373;</option>
-                        <option wire:click="getCurrency(2)" value="">$</option>
-                        <option wire:click="getCurrency(3)" value="">&euro;</option>
-                        <option wire:click="getCurrency(4)" value="">&pound;</option>
-                        <option wire:click="getCurrency(5)" value="">&#8358;</option>
+                        <option wire:click="getCurrency('&dollar;'')" value="">&dollar;</option>
+                        <option wire:click="getCurrency('GH&#8373;')" value="">GH&#8373;</option>
+                        <option wire:click="getCurrency('&euro;')" value="">&euro;</option>
+                        <option wire:click="getCurrency('&pound;')" value="">&pound;</option>
+                        <option wire:click="getCurrency('&#8358;')" value="">&#8358;</option>
                     </select>
                 </div>
 
@@ -75,18 +75,13 @@
 
             {{-- Calculation result --}}
             <div class="mt-4 text-center p-5 md:p-10">
-{{--                <h1 class="text-4xl font-serif my-10">--}}
-{{--                    <u>--}}
-{{--                        Result--}}
-{{--                    </u>--}}
-{{--                </h1>--}}
-                {{-- Hourly pay --}}
+
                 <div class="flex flex-col item-center justify-center text-center mb-8">
                     <p>
                         Hourly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        {{ $hourly_pay }}
+                        {!! $currency !!} {{ $hourly_pay }}
                     </p>
                 </div>
 
@@ -96,7 +91,7 @@
                         Daily pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        {{ $daily_pay }}
+                        {!! $currency !!} {{ $daily_pay }}
                     </p>
                 </div>
 
@@ -106,7 +101,7 @@
                         Weekly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        {{ $weekly_pay }}
+                        {!! $currency !!} {{ $weekly_pay }}
                     </p>
                 </div>
 
@@ -116,7 +111,7 @@
                         Monthly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        {{ $monthly_pay }}
+                        {!! $currency !!} {{ $monthly_pay }}
                     </p>
                 </div>
 
@@ -126,7 +121,7 @@
                         Annual pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        {{ $annual_pay }}
+                        {!! $currency !!} {{ $annual_pay }}
                     </p>
                 </div>
             </div>
