@@ -23,10 +23,14 @@
            </p>
            <div class="flex flex-row space-x-3">
                 <div>
-                    <i class="bi bi-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/jason-appiatu/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
                 </div>
                <div>
-                    <i class="bi bi-github"></i>
+                   <a href="https://github.com/Jason-bolt" target="_blank">
+                       <i class="bi bi-github"></i>
+                   </a>
                 </div>
            </div>
        </div>
