@@ -52,7 +52,7 @@
                     <p class="text-center my-2 md:text-left">
                         Number of hours a day
                     </p>
-                    <input wire:model="daily_hours" wire:change="calculate()" class="form-input rounded" type="number" min="0">
+                    <input wire:model="daily_hours" wire:change="calculate()" class="form-input rounded" type="number" min="0" max="24">
                 </div>
 
                 {{-- Work days in the week --}}
@@ -60,7 +60,7 @@
                     <p class="text-center my-2 md:text-left">
                         Work days in the week
                     </p>
-                    <input wire:model="work_days" wire:change="calculate()" class="form-input rounded" type="number" min="0">
+                    <input wire:model="work_days" wire:change="calculate()" class="form-input rounded" type="number" min="0" max="7">
                 </div>
 
                 {{-- Off days --}}
@@ -108,7 +108,7 @@
                 {{-- Monthly pay --}}
                 <div class="flex flex-col item-center justify-center text-center mb-8">
                     <p>
-                        Monthly pay
+                        Monthly pay (30 days)
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
                         <span class="text-2xl">{!! $currency !!}</span> {{ $monthly_pay }}
