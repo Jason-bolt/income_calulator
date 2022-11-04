@@ -7,12 +7,12 @@ use Livewire\Component;
 class Calculator extends Component
 {
 
-    public $rate;
+    public $rate = 'Hourly';
     public $currency = '&dollar;';
     public $amount = 0;
+    public $daily_hours = 0;
     public $work_days = 0;
     public $off_days = 0;
-    public $daily_hours = 0;
 
 //    Results
     public $hourly_pay = 0.00;
@@ -39,6 +39,11 @@ class Calculator extends Component
 
     public function calculate()
     {
-        $this->hourly_pay = $this->amount;
+        if ($this->rate == 'Hourly')
+        {
+            $this->hourly_pay = $this->amount;
+            $this->daily_pay = $this->amount * $this->daily_hours;
     }
+        }
+
 }
