@@ -7,6 +7,11 @@ use Livewire\Component;
 class Calculator extends Component
 {
 
+//    Constants
+    private $days_in_a_month = 30;
+    private $months_in_a_year = 12;
+
+
     public $rate = 'Hourly';
     public $currency = '&dollar;';
     public $amount = 0;
@@ -44,7 +49,8 @@ class Calculator extends Component
             $this->hourly_pay = $this->amount;
             $this->daily_pay = (int)$this->amount * (int)$this->daily_hours;
             $this->weekly_pay = (int)$this->daily_pay * (int)$this->work_days;
-            $this->monthly_pay = (int)$this->weekly_pay * 30;
+            $this->monthly_pay = (int)$this->weekly_pay * $this->days_in_a_month;
+            $this->annual_pay = (int)$this->monthly_pay * $this->months_in_a_year;
         }
     }
 
