@@ -33,6 +33,9 @@
                    </a>
                 </div>
            </div>
+           <p>
+               Product of Appiatu Group of Companies Copyright &copy; {{ date('Y') }}
+           </p>
        </div>
     </footer>
 </body>
