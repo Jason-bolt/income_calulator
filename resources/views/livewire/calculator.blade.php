@@ -66,7 +66,7 @@
                 {{-- Off days --}}
                 <div class="flex flex-col mb-2">
                     <p class="text-center my-2 md:text-left">
-                        Number of Off days (If applicable)
+                        Number of Off days (If applicable, only affects annual pay)
                     </p>
                     <input wire:model="off_days" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
@@ -108,7 +108,7 @@
                 {{-- Monthly pay --}}
                 <div class="flex flex-col item-center justify-center text-center mb-8">
                     <p>
-                        Monthly pay (30 days)
+                        Monthly pay (4 weeks)
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
                         <span class="text-2xl">{!! $currency !!}</span> {{ $monthly_pay }}
@@ -118,7 +118,7 @@
                 {{-- Annual pay --}}
                 <div class="flex flex-col item-center justify-center text-center mb-8">
                     <p>
-                        Annual pay
+                        Annual pay (12 months)
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
                         <span class="text-2xl">{!! $currency !!}</span> {{ $annual_pay }}
