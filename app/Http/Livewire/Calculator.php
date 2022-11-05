@@ -8,7 +8,7 @@ class Calculator extends Component
 {
 
 //    Constants
-    private $days_in_a_month = 30;
+    private $weeks_in_a_month = 4;
     private $months_in_a_year = 12;
 
 
@@ -66,7 +66,7 @@ class Calculator extends Component
             $this->hourly_pay = $this->amount;
             $this->daily_pay = (int)$this->amount * (int)$this->daily_hours;
             $this->weekly_pay = (int)$this->daily_pay * (int)$this->work_days;
-            $this->monthly_pay = (int)$this->weekly_pay * $this->days_in_a_month;
+            $this->monthly_pay = (int)$this->weekly_pay * $this->weeks_in_a_month;
             $this->annual_pay = (int)$this->monthly_pay * $this->months_in_a_year;
         }
 
@@ -75,9 +75,9 @@ class Calculator extends Component
         {
             $this->daily_pay = (int)$this->amount;
             $this->daily_hours == 0 ? '' : $this->hourly_pay = (int)$this->daily_pay / (int)$this->daily_hours;
-//            $this->weekly_pay = (int)$this->daily_pay * (int)$this->work_days;
-//            $this->monthly_pay = (int)$this->weekly_pay * $this->days_in_a_month;
-//            $this->annual_pay = (int)$this->monthly_pay * $this->months_in_a_year;
+            $this->weekly_pay = (int)$this->daily_pay * (int)$this->work_days;
+            $this->monthly_pay = (int)$this->weekly_pay * $this->weeks_in_a_month;
+            $this->annual_pay = (int)$this->monthly_pay * $this->months_in_a_year;
         }
     }
 
