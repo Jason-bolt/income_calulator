@@ -9,7 +9,7 @@
 
         <div class="p-5 md:px-2">
             <p class="mb-0 text-center text-blue-800">
-                Want to see how much you will make with your current or upcoming salary? Input the respective values to see a live representation of your expected salary.
+                Want to see how much your salary will be based on hourly or daily amounts? Input the respective values to see a live representation of your expected salary.
             </p>
             <form class="p-5 rounded-3xl md:p-10">
                 {{-- Pay rate --}}
