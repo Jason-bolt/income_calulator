@@ -66,7 +66,7 @@
                 {{-- Off days --}}
                 <div class="flex flex-col mb-2">
                     <p class="text-center my-2 md:text-left">
-                        Number of Off days (If applicable, only affects annual pay)
+                        Number of Off days (If applicable, <span class="text-blue-800">only affects annual pay</span>)
                     </p>
                     <input wire:model="off_days" wire:change="calculate()" class="form-input rounded" type="number" min="0">
                 </div>
