@@ -16,7 +16,7 @@
 
     @livewireScripts
 
-    <footer class="container mx-auto text-white font-serif pb-5 px-96">
+    <footer class="container mx-auto text-white font-serif pb-5 px-5 md:px-96">
        <div class="flex flex-col justify-center items-center space-y-3">
            <p class="text-center">
                I would like to hear all your views and comments for updates and corrections. Please send your comments through email at appiatujason@gmail.com
@@ -33,7 +33,7 @@
                    </a>
                 </div>
            </div>
-           <p>
+           <p class="text-center">
                Product of Appiatu Group of Companies Copyright &copy; {{ date('Y') }}
            </p>
        </div>
