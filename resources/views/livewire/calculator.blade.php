@@ -20,8 +20,8 @@
                     <select wire:click="clearFields()" class="form-select rounded">
                         <option wire:click="getRate('Hourly')" value="">Hourly</option>
                         <option wire:click="getRate('Daily')" value="">Daily</option>
-                        <option wire:click="getRate('Monthly')" value="">Monthly</option>
-                        <option wire:click="getRate('Yearly')" value="">Yearly</option>
+{{--                        <option wire:click="getRate('Monthly')" value="">Monthly</option>--}}
+{{--                        <option wire:click="getRate('Yearly')" value="">Yearly</option>--}}
                     </select>
                 </div>
 

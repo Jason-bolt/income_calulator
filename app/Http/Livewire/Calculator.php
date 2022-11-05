@@ -63,7 +63,7 @@ class Calculator extends Component
         /* Hourly pay */
         if ($this->rate == 'Hourly')
         {
-            $this->hourly_pay = $this->amount;
+            $this->hourly_pay = (int)$this->amount;
             $this->daily_pay = (int)$this->amount * (int)$this->daily_hours;
             $this->weekly_pay = (int)$this->daily_pay * (int)$this->work_days;
             $this->monthly_pay = (int)$this->weekly_pay * $this->weeks_in_a_month;
@@ -79,6 +79,7 @@ class Calculator extends Component
             $this->monthly_pay = (int)$this->weekly_pay * $this->weeks_in_a_month;
             $this->annual_pay = (int)$this->monthly_pay * $this->months_in_a_year;
         }
+
     }
 
 }
