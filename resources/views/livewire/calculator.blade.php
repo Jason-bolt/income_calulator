@@ -17,7 +17,7 @@
                     <p class="text-center my-2 md:text-left">
                         Rate of pay
                     </p>
-                    <select class="form-select rounded">
+                    <select wire:click="clearFields()" class="form-select rounded">
                         <option wire:click="getRate('Hourly')" value="">Hourly</option>
                         <option wire:click="getRate('Daily')" value="">Daily</option>
                         <option wire:click="getRate('Monthly')" value="">Monthly</option>
