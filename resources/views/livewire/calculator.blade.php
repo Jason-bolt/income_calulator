@@ -1,4 +1,4 @@
-<section class="container mx-auto my-20 md:px-96">
+<section class="container mx-auto my-20 xl:px-96 lg:px-32">
 
     <div class="bg-white">
         <div class="p-5 flex flex-col items-center justify-center">
@@ -8,7 +8,7 @@
         </div>
 
         <div class="p-5 md:px-2">
-            <p class="mb-0 text-center text-blue-800">
+            <p class="mb-0 text-center text-blue-800 md:px-8">
                 Want to see how much your salary will be based on hourly or daily amounts? Input the respective values to see a live representation of your expected salary.
             </p>
             <form class="p-5 rounded-3xl md:p-10">
