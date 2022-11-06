@@ -31,7 +31,7 @@
                         Currency
                     </p>
                     <select class="form-select rounded">
-                        <option wire:click="getCurrency('&dollar;'')" value="">&dollar;</option>
+                        <option wire:click="getCurrency('&dollar;')" value="">&dollar;</option>
                         <option wire:click="getCurrency('&#8373;')" value="">&#8373;</option>
                         <option wire:click="getCurrency('&euro;')" value="">&euro;</option>
                         <option wire:click="getCurrency('&pound;')" value="">&pound;</option>
