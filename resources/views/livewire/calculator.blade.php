@@ -17,9 +17,9 @@
                     <p class="text-center my-2 md:text-left">
                         Rate of pay
                     </p>
-                    <select wire:click="clearFields()" class="form-select rounded">
-                        <option wire:click="getRate('Hourly')" value="">Hourly</option>
-                        <option wire:click="getRate('Daily')" value="">Daily</option>
+                    <select wire:click="clearFields()" wire:change="getRate($event.target.value)" class="form-select rounded">
+                        <option value="Hourly">Hourly</option>
+                        <option value="Daily">Daily</option>
 {{--                        <option wire:click="getRate('Monthly')" value="">Monthly</option>--}}
 {{--                        <option wire:click="getRate('Yearly')" value="">Yearly</option>--}}
                     </select>
@@ -30,12 +30,12 @@
                     <p class="text-center my-2 md:text-left">
                         Currency
                     </p>
-                    <select class="form-select rounded">
-                        <option wire:click="getCurrency('&dollar;')" value="">&dollar;</option>
-                        <option wire:click="getCurrency('&#8373;')" value="">&#8373;</option>
-                        <option wire:click="getCurrency('&euro;')" value="">&euro;</option>
-                        <option wire:click="getCurrency('&pound;')" value="">&pound;</option>
-                        <option wire:click="getCurrency('&#8358;')" value="">&#8358;</option>
+                    <select wire:change="getCurrency($event.target.value)" class="form-select rounded">
+                        <option value="&dollar;">&dollar;</option>
+                        <option value="&#8373;">&#8373;</option>
+                        <option value="&euro;">&euro;</option>
+                        <option value="&pound;">&pound;</option>
+                        <option value="&#8358;">&#8358;</option>
                     </select>
                 </div>
 
