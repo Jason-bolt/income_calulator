@@ -18,8 +18,8 @@
                         Rate of pay
                     </p>
                     <select wire:click="clearFields()" wire:change="getRate($event.target.value)" class="form-select rounded">
-                        <option value="Hourly">Hourly</option>
-                        <option value="Daily">Daily</option>
+                        <option value="Hourly" {!! $rate == 'Hourly' ? 'selected' : '' !!}>Hourly</option>
+                        <option value="Daily" {!! $rate == 'Daily' ? 'selected' : '' !!}>Daily</option>
 {{--                        <option wire:click="getRate('Monthly')" value="">Monthly</option>--}}
 {{--                        <option wire:click="getRate('Yearly')" value="">Yearly</option>--}}
                     </select>
@@ -31,11 +31,11 @@
                         Currency
                     </p>
                     <select wire:change="getCurrency($event.target.value)" class="form-select rounded">
-                        <option value="&dollar;">&dollar;</option>
-                        <option value="&#8373;">&#8373;</option>
-                        <option value="&euro;">&euro;</option>
-                        <option value="&pound;">&pound;</option>
-                        <option value="&#8358;">&#8358;</option>
+                        <option value="&dollar;" {!! $currency == '&dollar;' ? 'selected' : '' !!}>&dollar;</option>
+                        <option value="&#8373;" {!! $currency == '&#8373;' ? 'selected' : '' !!}>&#8373;</option>
+                        <option value="&euro;" {!! $currency == '&euro;' ? 'selected' : '' !!}>&euro;</option>
+                        <option value="&pound;" {!! $currency == '&pound;' ? 'selected' : '' !!}>&pound;</option>
+                        <option value="&#8358;" {!! $currency == '&#8358;' ? 'selected' : '' !!}>&#8358;</option>
                     </select>
                 </div>
 
