@@ -29,11 +29,11 @@
                         Currency
                     </p>
                     <select wire:change="getCurrency($event.target.value)" class="form-select rounded">
-                        <option value="&dollar;" {!! $currency == '&dollar;' ? 'selected' : '' !!}>&dollar;</option>
-                        <option value="&#8373;" {!! $currency == '&#8373;' ? 'selected' : '' !!}>&#8373;</option>
-                        <option value="&euro;" {!! $currency == '&euro;' ? 'selected' : '' !!}>&euro;</option>
-                        <option value="&pound;" {!! $currency == '&pound;' ? 'selected' : '' !!}>&pound;</option>
-                        <option value="&#8358;" {!! $currency == '&#8358;' ? 'selected' : '' !!}>&#8358;</option>
+                        <option value="dollar" {!! $currency == 'dollar' ? 'selected' : '' !!}>&dollar;</option>
+                        <option value="#8373" {!! $currency == '#8373' ? 'selected' : '' !!}>&#8373;</option>
+                        <option value="euro" {!! $currency == 'euro' ? 'selected' : '' !!}>&euro;</option>
+                        <option value="pound" {!! $currency == 'pound' ? 'selected' : '' !!}>&pound;</option>
+                        <option value="#8358" {!! $currency == '#8358' ? 'selected' : '' !!}>&#8358;</option>
                     </select>
                 </div>
 
@@ -79,7 +79,7 @@
                         Hourly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        <span class="text-2xl">{!! $currency !!}</span> {{ $hourly_pay }}
+                        <span class="text-2xl">{!! '&' . $currency . ';' !!}</span> {{ $hourly_pay }}
                     </p>
                 </div>
 
@@ -89,7 +89,7 @@
                         Daily pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        <span class="text-2xl">{!! $currency !!}</span> {{ $daily_pay }}
+                        <span class="text-2xl">{!! '&' . $currency . ';' !!}</span> {{ $daily_pay }}
                     </p>
                 </div>
 
@@ -99,7 +99,7 @@
                         Weekly pay
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        <span class="text-2xl">{!! $currency !!}</span> {{ $weekly_pay }}
+                        <span class="text-2xl">{!! '&' . $currency . ';' !!}</span> {{ $weekly_pay }}
                     </p>
                 </div>
 
@@ -109,7 +109,7 @@
                         Monthly pay (4 weeks)
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        <span class="text-2xl">{!! $currency !!}</span> {{ $monthly_pay }}
+                        <span class="text-2xl">{!! '&' . $currency . ';' !!}</span> {{ $monthly_pay }}
                     </p>
                 </div>
 
@@ -119,7 +119,7 @@
                         Annual pay (12 months)
                     </p>
                     <p class="text-6xl font-serif text-blue-800">
-                        <span class="text-2xl">{!! $currency !!}</span> {{ $annual_pay }}
+                        <span class="text-2xl">{!! '&' . $currency . ';' !!}</span> {{ $annual_pay }}
                     </p>
                 </div>
             </div>

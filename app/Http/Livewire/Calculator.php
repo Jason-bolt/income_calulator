@@ -13,7 +13,7 @@ class Calculator extends Component
 
 
     public $rate = 'Hourly';
-    public $currency = '&dollar;';
+    public $currency = 'dollar';
     public $amount = 0;
     public $daily_hours = 0;
     public $work_days = 0;
@@ -41,6 +41,8 @@ class Calculator extends Component
     public function getCurrency($currency)
     {
         $this->currency = $currency;
+//        dd($this->currency);
+//        sleep(3);
     }
 
     public function clearFields()
