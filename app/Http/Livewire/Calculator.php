@@ -35,6 +35,7 @@ class Calculator extends Component
     public function getRate($rate)
     {
         $this->rate = $rate;
+        $this->clearFields();
     }
 
     public function getCurrency($currency)

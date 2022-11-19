@@ -17,11 +17,9 @@
                     <p class="text-center my-2 md:text-left">
                         Rate of pay
                     </p>
-                    <select wire:click="clearFields()" wire:change="getRate($event.target.value)" class="form-select rounded">
+                    <select {{--wire:click="clearFields()"--}} wire:change="getRate($event.target.value)" class="form-select rounded">
                         <option value="Hourly" {!! $rate == 'Hourly' ? 'selected' : '' !!}>Hourly</option>
                         <option value="Daily" {!! $rate == 'Daily' ? 'selected' : '' !!}>Daily</option>
-{{--                        <option wire:click="getRate('Monthly')" value="">Monthly</option>--}}
-{{--                        <option wire:click="getRate('Yearly')" value="">Yearly</option>--}}
                     </select>
                 </div>
 
